@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Bekerja dengan Ghost</title>
+    <title>Tentang saya</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,40 +16,40 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Bekerja dengan Ghost">
+    <meta name="twitter:title" content="Tentang saya">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Bekerja dengan Ghost">
+    <meta property="og:title" content="Tentang saya">
     <meta property="og:description" content="">
 
-    <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="http://127.0.0.1:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
     
-    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=38ada4edf2" />
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=38ada4edf2" />
 
     
     <meta name="generator" content="Ghost 0.4" />
-<link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="../../../../rss/index.html">
-<link rel="canonical" href="http://asambul.github.io/2014/03/15/bekerja-dengan-ghost/" />
+<link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="rss/index.html">
+<link rel="canonical" href="http://asambul.github.io/about-me/" />
 
 </head>
-<body class="post-template tag-ghost-post no-js">
+<body class="post-template page no-js">
 
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
 
-    <header class="panel-cover panel-cover--collapsed" style="background-image: url(../../../../content/images/2014/Mar/_clouds_with_mountain__in_Aso_Kumamoto_Japan_021014BB4F7FEE47.jpg)">
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(content/images/2014/Mar/_clouds_with_mountain__in_Aso_Kumamoto_Japan_021014BB4F7FEE47.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
         
-        <a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog"><img src="../../../../content/images/2014/Mar/photo_profil-2.jpg" width="80" alt="Alwin&#x27;s Blog logo" class="panel-cover__logo logo" /></a>
+        <a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog"><img src="content/images/2014/Mar/photo_profil-2.jpg" width="80" alt="Alwin&#x27;s Blog logo" class="panel-cover__logo logo" /></a>
         
         <h1 class="panel-cover__title panel-title"><a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog">Alwin&#x27;s Blog</a></h1>
         
@@ -61,8 +61,8 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="../../../../about-me" title="Tentang saya" class="blog-button">About me</a></li>
-              <li class="navigation__item"><a href="../../../../index.html#blog" title="link to Alwin&#x27;s Blog blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="about-me" title="Tentang saya" class="blog-button">About me</a></li>
+              <li class="navigation__item"><a href="index.html#blog" title="link to Alwin&#x27;s Blog blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 			
@@ -126,38 +126,23 @@
   <article class="post-container post-container--single">
 
     <header class="post-header">
-      <div class="post-meta">
-        <time datetime="15 Mar 2014" class="post-meta__date date">15 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on ghost</span>
-        <!--<span class="post-meta__author author"><img src="//www.gravatar.com/avatar/a5fd2a968864888e138d6bbe766fb6a5?d=404" alt="profile image for Alwin Sambul" class="avatar post-meta__avatar" /> by Alwin Sambul</span>-->
-      </div>
-      <h1 class="post-title">Bekerja dengan Ghost</h1>
+      <h1 class="post-title">Tentang saya</h1>
     </header>
 
-    <section class="post tag-ghost-post">
-      <p><img src="../../../../content/images/2014/Mar/Alwin_s_Ghost.jpg" alt="screenshot blog ghost saya" /></p>
+    <section class="post page">
+      <p><img src="content/images/2014/Mar/photo_profil-1.jpg" alt="" /></p>
 
-<p>Setelah selesai menginstal Ghost di laptop saya, saya pikir perlu untuk membuat beberapa catatan. Biar nggak lupa, atau mungkin bisa berguna untuk kawan2 yang ingin mencoba bekerja dengan Ghost. </p>
+<h3 id="alwinsambul">Alwin Sambul</h3>
 
-<p>Berikut ini adalah langkah2 untuk bekerja dengan Ghost:</p>
+<p>Suami dan Ayah penuh waktu; Dosen tetap di Fakultas Teknik <a href="http://unsrat.ac.id">Universitas Sam Ratulangi</a> Manado; Sedang tugas belajar program S-3 di <a href="http://www.kumamoto-u.ac.jp">Kumamoto University</a> Jepang; Menekuni bidang Teknologi Informasi; Antusias pada segala sesuatu berbau iptek; Suka musik, film serius, makanan enak dan travelling; Percaya bahwa apa yang diawali dengan kebaikan akan berakhir pula dengan kebaikan. </p>
 
-<ol>
-<li>Aktifkan HTTP server, dalam hal ini saya menggunakan XAMPP. Untuk bekerja dengan Ghost, anda cukup jalankan Apache servernya saja.  </li>
-<li>Buka terminal window dan masuk ke directory Ghost, di laptop saya: <code>/Applications/XAMPP/xamppfiles/htdocs/ghost</code>  </li>
-<li>Jalankan Ghost dengan cara: <code>npm start</code> di command line  </li>
-<li>Login ke Ghost melalui browser: <code>http://localhost:2368/ghost</code>  </li>
-<li>Buat postingan baru atau edit postingan lama. Jangan lupa meng-click tombol "Publish now"  </li>
-<li>Pastikan anda berada pada directory <strong>Buster</strong>, contoh pada laptop saya: <code>~/buster/buster</code>, lalu generate static pages dengan cara: <code>buster generate --domain=http://127.0.0.1:2368</code>.  </li>
-<li>Upload ke Github dengan cara: <code>buster deploy</code>  </li>
-<li>Tampilkan di browser dengan URL: <code>http://asambul.github.io/</code> (lihat screenshot pada top image)</li>
-</ol>
+<p>Alamat sekarang: <br />
+Kurokami 2-chome 37-32 Ryoku Suisou, Room: 201 Kumamoto-shi Chuo-ku Japan, 860-0862</p>
 
-<p>Sejauh ini, menurut saya Ghost cukup baik dan mudah digunakan. Kita hanya perlu membiasakan diri dulu dengan beberapa commands. Kalau sudah hafal, membuat postingan dapat dilakukan dengan cepat dan mudah.</p>
+<p>Silahkan kunjungi website pribadi saya di: <a href='http://alwinsworld.weebly.com'>http://alwinsworld.weebly.com</a></p>
     </section>
 
   </article>
-
-  
-
 
 
 
@@ -170,10 +155,10 @@
     </div>
 
     
-    <script src="../../../../shared/vendor/jquery/jquery.js?v=38ada4edf2"></script>
+    <script src="shared/vendor/jquery/jquery.js?v=38ada4edf2"></script>
 
     
-    <script type="text/javascript" src="../../../../assets/js/main.js?v=38ada4edf2"></script>
+    <script type="text/javascript" src="assets/js/main.js?v=38ada4edf2"></script>
 
 </body>
 </html>
