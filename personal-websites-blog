@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>About me</title>
+    <title>Personal Websites & Blog</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,23 +16,23 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="About me">
+    <meta name="twitter:title" content="Personal Websites & Blog">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="About me">
+    <meta property="og:title" content="Personal Websites & Blog">
     <meta property="og:description" content="">
 
-    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="http://127.0.0.1:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
     
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=824957bbe9" />
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=824957bbe9" />
 
     
     <meta name="generator" content="Ghost 0.4" />
-<link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="../rss/index.html">
-<link rel="canonical" href="http://asambul.github.io/about-me/" />
+<link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="rss/index.html">
+<link rel="canonical" href="http://asambul.github.io/personal-websites-blog/" />
 
 </head>
 <body class="post-template page no-js">
@@ -42,14 +42,14 @@
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
 
-    <header class="panel-cover panel-cover--collapsed" style="background-image: url(../content/images/2014/Mar/aso.jpg)">
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(content/images/2014/Mar/aso.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
         
-        <a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog"><img src="../content/images/2014/Mar/photo_profil-2.jpg" width="80" alt="Alwin&#x27;s Blog logo" class="panel-cover__logo logo" /></a>
+        <a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog"><img src="content/images/2014/Mar/photo_profil-2.jpg" width="80" alt="Alwin&#x27;s Blog logo" class="panel-cover__logo logo" /></a>
         
         <h1 class="panel-cover__title panel-title"><a href="http://asambul.github.io" title="link to homepage for Alwin&#x27;s Blog">Alwin&#x27;s Blog</a></h1>
         
@@ -61,8 +61,8 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="index.html" title="Tentang saya" class="blog-button">About me</a></li>
-              <li class="navigation__item"><a href="../index.html#blog" title="link to Alwin&#x27;s Blog blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="about-me/index.html" title="Tentang saya" class="blog-button">About me</a></li>
+              <li class="navigation__item"><a href="index.html#blog" title="link to Alwin&#x27;s Blog blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 			
@@ -126,39 +126,60 @@
   <article class="post-container post-container--single">
 
     <header class="post-header">
-      <h1 class="post-title">About me</h1>
+      <h1 class="post-title">Personal Websites & Blog</h1>
     </header>
 
     <section class="post page">
-      <p><img src="../content/images/2014/Mar/photo_profil-1.jpg" alt="" /></p>
+      <h3 id="1alwinsblog">1) Alwin's Blog</h3>
 
-<h2 id="alwinsambul">Alwin Sambul</h2>
+<p><img src="content/images/2014/Mar/Alwin_s_Blog.jpg" alt="" /></p>
+
+<p>URL: <a href='http://asambul.github.io'>http://asambul.github.io</a> <br />
+Host: GitHub pages <br />
+Purpose: Main blog (offline managed using Ghost), portal to personal website.</p>
+
+<h3 id="2alwinsambulinfo">2) AlwinSambul.info</h3>
+
+<p>URL: <a href='http://alwinsambul.info'>http://alwinsambul.info</a> (planned) <br />
+Host: Masterweb <br />
+Purpose: </p>
+
+<ul>
+<li>Personal website: I will use this in my business card, the content is an exact copy from my Weebly site. </li>
+<li>Blogs portal: RSS feed from other blogs</li>
+</ul>
+
+<h3 id="3alwinsworld">3) Alwin's World</h3>
+
+<p><img src="content/images/2014/Mar/Alwin_s_World___Home.jpg" alt="" />
+URL: <a href='http://alwinsworld.weebly.com'>http://alwinsworld.weebly.com</a> <br />
+Host: Weebly <br />
+Purpose: Personal website, blogs portal (RSS feed from other blogs)</p>
+
+<h3 id="4crossingjapan">4) Crossing Japan</h3>
+
+<p><img src="content/images/2014/Mar/Crossing_Japan___Just_another_WordPress_com_site.jpg" alt="" />
+URL: <a href='http://crossingjapan.wordpress.com'>http://crossingjapan.wordpress.com</a> <br />
+Host: Wordpress <br />
+Purpose: Blog about Japanese language</p>
+
+<h3 id="5mydailyprogramming">5) My Daily Programming</h3>
+
+<p><img src="content/images/2014/Mar/MyDailyCoding___Collective_thoughts_on_programming_and_all_related_stuffs_.jpg" alt="" />
+URL: <a href='http://mydailycoding.wordpress.com'>http://mydailycoding.wordpress.com</a> <br />
+Host: Wordpress <br />
+Purpose: Blog about computer programming</p>
+
+<h3 id="6aboutme">6) About me</h3>
+
+<p><img src="content/images/2014/Mar/Alwin_Sambul___Kumamoto__Japan__Sam_Ratulangi_University__Manado__Indonesia__Kumamoto_University__Japan___about_me.jpg" alt="" />
+URL: <a href='http://about.me/alwinsambul'>http://about.me/alwinsambul</a> <br />
+Host: About.me <br />
+Purpose: Just a simple one-page online business card</p>
 
 <hr />
 
-<p><img src="http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/32/Indonesia-Flag-icon.png"> <br />
-Suami dan Ayah penuh waktu; Dosen tetap di Fakultas Teknik <a href="http://unsrat.ac.id">Universitas Sam Ratulangi</a> Manado; Sedang tugas belajar program S-3 di <a href="http://www.kumamoto-u.ac.jp">Kumamoto University</a> Jepang; Menekuni bidang Teknologi Informasi; Antusias pada segala sesuatu berbau iptek; Suka musik, film serius, makanan enak dan travelling; Percaya bahwa apa yang diawali dengan kebaikan akan berakhir pula dengan kebaikan. </p>
-
-<p><img src="http://icons.iconarchive.com/icons/custom-icon-design/flag-3/32/United-States-Flag-icon.png"> <br />
-A full-time husband and father; A lecturer at the Faculty of Engineering Sam Ratulangi University Manado, Indonesia; A doctoral student at Kumamoto University Japan; Mainly work in the field of Information Technology; Entusiastic in all things related to science and technology; Likes music, serious movies, good food and travelling; Believe that what started good will ends good as well.</p>
-
-<h3 id="contact">Contact:</h3>
-
-<p><strong>Home:</strong><br>Kurokami 2-chome 37-32 <br>Ryoku Suisou, Room: 201 <br>Kumamoto-shi Chuo-ku 860-0862<br>JAPAN</p>
-
-<p>Email: <a href='mailto:asambul@gmail.com'>asambul@gmail.com</a> <br />
-Website: <a href='http://alwinsworld.weebly.com'>http://alwinsworld.weebly.com</a> </p>
-
-<h3 id="onlineexistance">Online Existance:</h3>
-
-<ol>
-<li><a href="../personal-websites-blog">Personal Website &amp; Blogs</a>  </li>
-<li>Internet Social Networks</li>
-</ol>
-
-<hr />
-
-<p>&lt;&lt; <a href="../index.html">HOME</a> </p>
+<p>&lt;&lt; <a href="about-me/index.html">BACK</a> </p>
     </section>
 
   </article>
@@ -174,10 +195,10 @@ Website: <a href='http://alwinsworld.weebly.com'>http://alwinsworld.weebly.com</
     </div>
 
     
-    <script src="../shared/vendor/jquery/jquery.js?v=824957bbe9"></script>
+    <script src="shared/vendor/jquery/jquery.js?v=824957bbe9"></script>
 
     
-    <script type="text/javascript" src="../assets/js/main.js?v=824957bbe9"></script>
+    <script type="text/javascript" src="assets/js/main.js?v=824957bbe9"></script>
 
 </body>
 </html>
