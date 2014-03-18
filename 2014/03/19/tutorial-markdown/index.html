@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Jam Matahari</title>
+    <title>Tutorial Markdown (Bagian 1)</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Jam Matahari">
+    <meta name="twitter:title" content="Tutorial Markdown (Bagian 1)">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Jam Matahari">
+    <meta property="og:title" content="Tutorial Markdown (Bagian 1)">
     <meta property="og:description" content="">
 
     <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -32,10 +32,10 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="../../../../rss/index.html">
-<link rel="canonical" href="http://asambul.github.io/2014/03/18/jam-matahari/" />
+<link rel="canonical" href="http://asambul.github.io/2014/03/19/tutorial-markdown/" />
 
 </head>
-<body class="post-template tag-menarik tag-seni no-js">
+<body class="post-template no-js">
 
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
@@ -127,32 +127,44 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="18 Mar 2014" class="post-meta__date date">18 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on menarik, seni</span>
+        <time datetime="19 Mar 2014" class="post-meta__date date">19 Mar 2014</time> &#8226; <span class="post-meta__tags tags"></span>
         <!--<span class="post-meta__author author"><img src="//www.gravatar.com/avatar/a5fd2a968864888e138d6bbe766fb6a5?d=404" alt="profile image for Alwin Sambul" class="avatar post-meta__avatar" /> by Alwin Sambul</span>-->
       </div>
-      <h1 class="post-title">Jam Matahari</h1>
+      <h1 class="post-title">Tutorial Markdown (Bagian 1)</h1>
     </header>
 
-    <section class="post tag-menarik tag-seni">
-      <p><img src="http://cdn.visualnews.com/wp-content/uploads/2014/03/Voshart-Digital-Sundail-Sun-Cube-2.gif" alt="" /></p>
+    <section class="post">
+      <h2 id="pendahuluan">Pendahuluan</h2>
 
-<p>Ini barang seni, dan pembuatnya adalah seorang seniman asal Toronto bernama Daniel Voshart. Ia membuat sebuah jam non-elektronik yang mampu menunjukkan waktu dengan bantuan sinar matahari.</p>
+<p>Markdown adalah modul editor di Ghost yang tugasnya menerjemahkan teks yang kita masukkan menjadi kode HTML. Dengan Markdown, berbagai fungsionalitas teknis penulisan teks, seperti: format, link, gambar, list, header dan lain-lain, dapat dilakukan dengan sangat mudah dan langsung pada editornya. Hal ini dimaksudkan agar anda bisa lebih fokus pada isi teks ketimbang penampilannya. Dokumentasi lengkap tentang Markdown dapat dibaca di website penciptanya, Mark Gruber, di: <a href='http://daringfireball.net/projects/markdown/syntax'>http://daringfireball.net/projects/markdown/syntax</a></p>
 
-<p>Cara kerjanya:</p>
+<h2 id="formatteks">Format Teks</h2>
 
-<blockquote>
-  <p>Inside the cube are hundreds of channels cut to match the exact angle of the sun and cast dot-matrix style numbers underneath for each daylight hour.</p>
-</blockquote>
+<p>Untuk menformat teks, kita dapat menggunakan kode: </p>
 
-<p>By the way, jam ini jelas bukan untuk digunakan sehari-hari. Meskipun fungsionalitasnya tidak dapat dibandingkan dengan jam biasa, tapi sebagai sebuah karya seni, Sun Cube tetap saja menarik dan memiliki nilai artistik. </p>
+<ul>
+<li><code>*&lt;teks&gt;*</code> untuk membuatnya  <em>italic</em>, </li>
+<li><code>**&lt;teks&gt;**</code> untuk membuatnya <strong>bold</strong>,</li>
+<li><code>***&lt;teks&gt;***</code> untuk membuatnya <strong><em>bold dan italic</em></strong>,</li>
+</ul>
 
-<p><img src="http://cdn.visualnews.com/wp-content/uploads/2014/03/Voshart-Digital-Sundail-Sun-Cube-5.jpg" alt="" /></p>
+<h2 id="link">Link</h2>
 
-<p>Baca selengkapnya di: <a href='http://www.visualnews.com/2014/03/17/artist-spent-month-creating-digital-sundial-says-dont-throw-watch/#seiMuUZr8TBX2l1i.99'>http://www.visualnews.com/2014/03/17/artist-spent-month-creating-digital-sundial-says-dont-throw-watch/#seiMuUZr8TBX2l1i.99</a></p>
+<p>Untuk membuat link, anda cukup mengetikkan URL link tersebut dan Markdown akan secara otomatis merubahnya. Contoh, ketikkan: <code>http://www.example.com</code> dan Markdown akan merubahnya menjadi <a href='http://www.example.com'>http://www.example.com</a></p>
+
+<h2 id="gambar">Gambar</h2>
+
+<p>Untuk menyisipkan gambar, anda cukup mengetikkan kode: <code>![]</code>, Markdown akan menampilkan sebuah image placeholder di panel preview seperti ini:</p>
+
+<p><img src="../../../../content/images/2014/Mar/Ghost_Admin.jpg" alt="" /></p>
+
+<p>Drag-and-drop file gambar dari komputer anda ke image placeholder yang disediakan. Gambar akan secara otomatis disisipkan. </p>
+
+<p>Jika gambar anda diambil langsung dari Internet, klik icon link pada bagian kiri bawah placeholder (lihat panah merah) lalu tuliskan URL gambarnya di tempat yang disediakan. </p>
 
 <hr />
 
-<p>Image via <a href="http://www.visualnews.com">VisualNews</a></p>
+<p>Bersambung ke Bagian 2</p>
     </section>
 
   </article>
@@ -162,15 +174,15 @@
                 <section class="share">
                     Share this post on: 
                     
-                    <a href="http://twitter.com/share?text=Jam%20Matahari&url=http://asambul.github.io/2014/03/18/jam-matahari/" title="Share at Twitter">
+                    <a href="http://twitter.com/share?text=Tutorial%20Markdown%20(Bagian%201)&url=http://asambul.github.io/2014/03/19/tutorial-markdown/" title="Share at Twitter">
 				      <i class='icon icon-social-twitter'></i>				      
 				    </a>
 
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://asambul.github.io/2014/03/18/jam-matahari/" title="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://asambul.github.io/2014/03/19/tutorial-markdown/" title="Share on Facebook">
 				      <i class='icon icon-social-facebook'></i>				      
 				    </a>
 
-                    <a href="https://plus.google.com/share?url=http://asambul.github.io/2014/03/18/jam-matahari/" title="Share on Google plus">
+                    <a href="https://plus.google.com/share?url=http://asambul.github.io/2014/03/19/tutorial-markdown/" title="Share on Google plus">
 				      <i class='icon icon-social-google-plus'></i>				      
 				    </a>
 
