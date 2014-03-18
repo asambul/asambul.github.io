@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Menambahkan screenshot image di Ghost editor</title>
+    <title>Menjalankan Ghost dengan Forever</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Menambahkan screenshot image di Ghost editor">
+    <meta name="twitter:title" content="Menjalankan Ghost dengan Forever">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Menambahkan screenshot image di Ghost editor">
+    <meta property="og:title" content="Menjalankan Ghost dengan Forever">
     <meta property="og:description" content="">
 
     <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -32,7 +32,7 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Alwin&#x27;s Blog" href="../../../../rss/index.html">
-<link rel="canonical" href="http://asambul.github.io/2014/03/15/membuat-screenshot-dan-menambahkannya-pada-post-ghost/" />
+<link rel="canonical" href="http://asambul.github.io/2014/03/18/menjalankan-ghost-dengan-forever/" />
 
 </head>
 <body class="post-template tag-ghost-post no-js">
@@ -127,32 +127,41 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="15 Mar 2014" class="post-meta__date date">15 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on ghost</span>
+        <time datetime="18 Mar 2014" class="post-meta__date date">18 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on ghost</span>
         <!--<span class="post-meta__author author"><img src="//www.gravatar.com/avatar/a5fd2a968864888e138d6bbe766fb6a5?d=404" alt="profile image for Alwin Sambul" class="avatar post-meta__avatar" /> by Alwin Sambul</span>-->
       </div>
-      <h1 class="post-title">Menambahkan screenshot image di Ghost editor</h1>
+      <h1 class="post-title">Menjalankan Ghost dengan Forever</h1>
     </header>
 
     <section class="post tag-ghost-post">
-      <p><img src="http://evernote.com/media/img/products/hero_skitch-v2.png" alt="sctich" /></p>
+      <h2 id="apaituforever">Apa itu Forever?</h2>
 
-<p>Untuk membuat screenshot, saya biasanya menggunakan sebuah aplikasi gratis bernama <a href="http://evernote.com/skitch">Scitch</a>. Nah, untuk menambahkan image screenshot di Ghost editor ternyata sangat mudah. </p>
+<p>Forever adalah sebuah modul Node yang dapat digunakan untuk menjalankan Ghost secara permanen. Forever juga akan memonitor apakah Ghost berjalan atau tidak. Jika misalnya Ghost mengalami crash, Forever akan secara otomatis menjalankan Ghost kembali. </p>
 
-<p>Caranya:</p>
+<h2 id="instalasiforever">Instalasi Forever</h2>
 
-<ol>
-<li>Buat placeholder image di Ghost editor dengan cara: <code>![]</code>  </li>
-<li>Buat screenshot dengan Scitch.  </li>
-<li>Posisikan window Browser dan Scitch bersebelahan sehingga mudah untuk melakukan drag-n-drop.  </li>
-<li>Dari window Scitch, drag icon jpg pada bagian tengah bawah dan drop pada placeholder yang telah anda buat di Ghost editor  </li>
-<li>Screenshot anda secara otomatis langsung ditambahkan dalam postingan. </li>
-</ol>
+<p>Forever dapat di-instal dengan menjalankan command berikut:</p>
 
-<p>Mudah sekali bukan? :)</p>
+<pre><code> npm install -g forever
+</code></pre>
 
-<hr />
+<p>Jika gagal, kemungkinan karena anda butuh akses administrator untuk menjalankan perintah di atas. Coba lagi dengan menggunakan: <code>sudo &lt;command&gt;</code></p>
 
-<p>Top image via <a href="http://evernote.com/media/img/products/hero_skitch-v2.png">Evernote</a></p>
+<h2 id="menjalankanghostdenganforever">Menjalankan Ghost dengan Forever</h2>
+
+<p>Masuk dulu ke direktori Ghost, contoh: <code>/Applications/XAMPP/htdocs/ghost</code> pada Mac saya. Selanjutnya jalankan perintah berikut:</p>
+
+<pre><code> forever start index.js
+</code></pre>
+
+<p>Anda dapat menutup command window, Ghost akan tetap berjalan di background. </p>
+
+<h2 id="menghentikanghostdenganforever">Menghentikan Ghost dengan Forever</h2>
+
+<p>Pastikan anda berada pada direktori Ghost (lihat langkah sebelumnya), lalu jalankan perintah berikut:</p>
+
+<pre><code> forever stop index.js
+</code></pre>
     </section>
 
   </article>
@@ -162,15 +171,15 @@
                 <section class="share">
                     Share this post on: 
                     
-                    <a href="http://twitter.com/share?text=Menambahkan%20screenshot%20image%20di%20Ghost%20editor&url=http://asambul.github.io/2014/03/15/membuat-screenshot-dan-menambahkannya-pada-post-ghost/" title="Share at Twitter">
+                    <a href="http://twitter.com/share?text=Menjalankan%20Ghost%20dengan%20Forever&url=http://asambul.github.io/2014/03/18/menjalankan-ghost-dengan-forever/" title="Share at Twitter">
 				      <i class='icon icon-social-twitter'></i>				      
 				    </a>
 
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://asambul.github.io/2014/03/15/membuat-screenshot-dan-menambahkannya-pada-post-ghost/" title="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://asambul.github.io/2014/03/18/menjalankan-ghost-dengan-forever/" title="Share on Facebook">
 				      <i class='icon icon-social-facebook'></i>				      
 				    </a>
 
-                    <a href="https://plus.google.com/share?url=http://asambul.github.io/2014/03/15/membuat-screenshot-dan-menambahkannya-pada-post-ghost/" title="Share on Google plus">
+                    <a href="https://plus.google.com/share?url=http://asambul.github.io/2014/03/18/menjalankan-ghost-dengan-forever/" title="Share on Google plus">
 				      <i class='icon icon-social-google-plus'></i>				      
 				    </a>
 
