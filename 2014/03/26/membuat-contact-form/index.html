@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Membuat Contact Form</title>
+    <title>Membuat Contact Form Page di Ghost</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Membuat Contact Form">
+    <meta name="twitter:title" content="Membuat Contact Form Page di Ghost">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Membuat Contact Form">
+    <meta property="og:title" content="Membuat Contact Form Page di Ghost">
     <meta property="og:description" content="">
 
     <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -35,7 +35,7 @@
 <link rel="canonical" href="http://www.alwinsambul.info/2014/03/26/membuat-contact-form/" />
     
 </head>
-<body class="post-template no-js">
+<body class="post-template tag-contact-form tag-foxyform tag-javascript no-js">
 
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
@@ -136,19 +136,60 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="26 Mar 2014" class="post-meta__date date">26 Mar 2014</time> &#8226; <span class="post-meta__tags tags"></span>
+        <time datetime="26 Mar 2014" class="post-meta__date date">26 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on contact form, foxyform, javascript</span>
         <!--<span class="post-meta__author author"><img src="//www.gravatar.com/avatar/a5fd2a968864888e138d6bbe766fb6a5?d=404" alt="profile image for Alwin Sambul" class="avatar post-meta__avatar" /> by Alwin Sambul</span>-->
       </div>
-      <h1 class="post-title">Membuat Contact Form</h1>
+      <h1 class="post-title">Membuat Contact Form Page di Ghost</h1>
     </header>
 
-    <section class="post">
-      <p>Dalam posting ini kita akan mencoba membuat contact from:</p>
+    <section class="post tag-contact-form tag-foxyform tag-javascript">
+      <p>Contact form adalah isian pada sebuah halaman web yang digunakan untuk mengirim email. Dengan adanya Contact form ini, pengunjung website kita bisa langsung mengirim email tanpa perlu menggunakan aplikasi email client. Gambar berikut ini adalah contoh sebuah contact form:</p>
 
-<!-- Do not change the code! -->  
+<p><img src="../../../../content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com.jpg" alt="" /></p>
 
-<a id="foxyform_embed_link_537626" href="http://www.foxyform.com/">foxyform</a>  
-<!-- Do not change the code! -->
+<p>Sampai saat ini, Ghost belum menyediakan fasilitas Contact form secara native. Sebagai gantinya, kita perlu menggunakan layanan di luar Ghost. Salah satu layanan yang dapat digunakan untuk membuat Contact form adalah <a href="http://foxyform.com">FoxyForm</a>.   </p>
+
+<p>Berikut ini adalah langkah-langkah membuat contact form di FoxyForm dan menyisipkannya ke dalam Ghost:</p>
+
+<p>1) Pertama-tama, masuklah ke website <a href="http://foxyform.com">FoxyForm</a>, <br />
+2) Pada bagian "YOUR OPTIONS", tentukan isian apa saja yang ingin digunakan:</p>
+
+<p><img src="../../../../content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-1.jpg" alt="" /></p>
+
+<p>3) Anda pun dapat melakukan pengaturan lain seperti warna latar, huruf, ukuran huruf dll. </p>
+
+<p><img src="../../../../content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-2.jpg" alt="" /></p>
+
+<p>4) Masukkan email address yang akan digunakan sebagai tujuan pengiriman pesan, isi kode angka untuk spam protection, dan klik tombol "Create Formular":</p>
+
+<p><img src="../../../../content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-3.jpg" alt="" /></p>
+
+<p>5) Jika berhasil, FoxyForm akan menampilkan sederet code (juga akan dikirimkan ke email anda) seperti ini:</p>
+
+<p><img src="../../../../content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-5.jpg" alt="" /></p>
+
+<p>6) Copy bagian <code>&lt;a&gt;...&lt;/a&gt;</code> dari code tersebut dan paste ke post atau page editor Ghost. </p>
+
+<p>Contoh:</p>
+
+<pre><code>&lt;a id="foxyform_embed_link_537626" href="http://www.foxyform.com/"&gt;foxyform&lt;/a&gt;
+</code></pre>
+
+<p>7) Untuk menambahkan contact form di page, buka dan edit file bernama <strong>page.hbs</strong> yang terletak di direktori theme aktif anda. </p>
+
+<p>8) Copy bagian <code>&lt;script&gt;...&lt;/script&gt;</code> dari code     yang diberikan FoxyForm dan tempelkan dalam file <strong>page.hbs</strong>, tepatnya sebelum tag <code>&lt;article&gt;</code>. </p>
+
+<p>Ini contoh code FoxyForm yang disisipkan di <strong>page.hbs</strong>:</p>
+
+<p><img src="../../../../content/images/2014/Mar/page_hbs.jpg" alt="" /></p>
+
+<p>9) Untuk menambahkan contact form di post, lakukan cara yang sama dengan langkah 7 dan 8 pada file <strong>post.hbs</strong>.</p>
+
+<p>10) Pada panel preview, contact form hanya akan ditampilkan sebagai sebuah Link <a href="http://foxyform.com">foxyForm</a>. Jangan kuatir, ini normal. </p>
+
+<p>11) Update post dan tampilkan post atau page yang baru saja anda buat. Ini contoh tampilan jadi dari post yang berisi contact form:</p>
+
+<p><img src="../../../../content/images/2014/Mar/Membuat_Contact_Form.jpg" alt="" /></p>
     </section>
 
   </article>
@@ -158,7 +199,7 @@
                 <section class="share">
                     Share this post on: 
                     
-                    <a href="http://twitter.com/share?text=Membuat%20Contact%20Form&url=http://www.alwinsambul.info/2014/03/26/membuat-contact-form/" title="Share at Twitter">
+                    <a href="http://twitter.com/share?text=Membuat%20Contact%20Form%20Page%20di%20Ghost&url=http://www.alwinsambul.info/2014/03/26/membuat-contact-form/" title="Share at Twitter">
 				      <i class='icon icon-social-twitter'></i>				      
 				    </a>
 

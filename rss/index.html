@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AlwinSambul.info]]></title><description><![CDATA[Nama saya Alwin Sambul. Website ini memuat info ringkas tentang saya, link ke media-media sosial yang saya ikuti dan blog pribadi. Terimakasih sudah berkunjung.]]></description><link>http://www.alwinsambul.info/</link><generator>Ghost v0.4.1</generator><lastBuildDate>Tue, 25 Mar 2014 16:51:05 GMT</lastBuildDate><atom:link href="http://www.alwinsambul.info/rss/" rel="self" type="application/rss+xml"/><author><![CDATA[Alwin Sambul]]></author><ttl>60</ttl><item><title><![CDATA[Membuat Contact Form]]></title><description><![CDATA[<p>Dalam posting ini kita akan mencoba membuat contact from:</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AlwinSambul.info]]></title><description><![CDATA[Nama saya Alwin Sambul. Website ini memuat info ringkas tentang saya, link ke media-media sosial yang saya ikuti dan blog pribadi. Terimakasih sudah berkunjung.]]></description><link>http://www.alwinsambul.info/</link><generator>Ghost v0.4.1</generator><lastBuildDate>Tue, 25 Mar 2014 17:56:27 GMT</lastBuildDate><atom:link href="http://www.alwinsambul.info/rss/" rel="self" type="application/rss+xml"/><author><![CDATA[Alwin Sambul]]></author><ttl>60</ttl><item><title><![CDATA[Membuat Contact Form Page di Ghost]]></title><description><![CDATA[<p>Contact form adalah isian pada sebuah halaman web yang digunakan untuk mengirim email. Dengan adanya Contact form ini, pengunjung website kita bisa langsung mengirim email tanpa perlu menggunakan aplikasi email client. Gambar berikut ini adalah contoh sebuah contact form:</p>
 
-<!-- Do not change the code! -->  
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com.jpg'  alt="" /></p>
 
-<a id="foxyform_embed_link_537626" href='http://www.foxyform.com/' >foxyform</a>  
-<!-- Do not change the code! -->]]></description><link>http://www.alwinsambul.info/2014/03/26/membuat-contact-form/</link><guid isPermaLink="false">386e8b96-8000-428d-8bd2-874daa8ac540</guid><dc:creator><![CDATA[Alwin Sambul]]></dc:creator><pubDate>Tue, 25 Mar 2014 16:25:30 GMT</pubDate></item><item><title><![CDATA[Belajar menggunakan &quot;I used to&quot;]]></title><description><![CDATA[<p><iframe width="560" height="315" src='http://www.youtube.com/embed/7pY09qS7E_U'  frameborder="0" allowfullscreen></iframe></p>
+<p>Sampai saat ini, Ghost belum menyediakan fasilitas Contact form secara native. Sebagai gantinya, kita perlu menggunakan layanan di luar Ghost. Salah satu layanan yang dapat digunakan untuk membuat Contact form adalah <a href='http://foxyform.com/' >FoxyForm</a>.   </p>
+
+<p>Berikut ini adalah langkah-langkah membuat contact form di FoxyForm dan menyisipkannya ke dalam Ghost:</p>
+
+<p>1) Pertama-tama, masuklah ke website <a href='http://foxyform.com/' >FoxyForm</a>, <br />
+2) Pada bagian "YOUR OPTIONS", tentukan isian apa saja yang ingin digunakan:</p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-1.jpg'  alt="" /></p>
+
+<p>3) Anda pun dapat melakukan pengaturan lain seperti warna latar, huruf, ukuran huruf dll. </p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-2.jpg'  alt="" /></p>
+
+<p>4) Masukkan email address yang akan digunakan sebagai tujuan pengiriman pesan, isi kode angka untuk spam protection, dan klik tombol "Create Formular":</p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-3.jpg'  alt="" /></p>
+
+<p>5) Jika berhasil, FoxyForm akan menampilkan sederet code (juga akan dikirimkan ke email anda) seperti ini:</p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/A_free_contact_form_for_your_website___Foxyform_com-5.jpg'  alt="" /></p>
+
+<p>6) Copy bagian <code>&lt;a&gt;...&lt;/a&gt;</code> dari code tersebut dan paste ke post atau page editor Ghost. </p>
+
+<p>Contoh:</p>
+
+<pre><code>&lt;a id="foxyform_embed_link_537626" href='http://www.foxyform.com/' &gt;foxyform&lt;/a&gt;
+</code></pre>
+
+<p>7) Untuk menambahkan contact form di page, buka dan edit file bernama <strong>page.hbs</strong> yang terletak di direktori theme aktif anda. </p>
+
+<p>8) Copy bagian <code>&lt;script&gt;...&lt;/script&gt;</code> dari code     yang diberikan FoxyForm dan tempelkan dalam file <strong>page.hbs</strong>, tepatnya sebelum tag <code>&lt;article&gt;</code>. </p>
+
+<p>Ini contoh code FoxyForm yang disisipkan di <strong>page.hbs</strong>:</p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/page_hbs.jpg'  alt="" /></p>
+
+<p>9) Untuk menambahkan contact form di post, lakukan cara yang sama dengan langkah 7 dan 8 pada file <strong>post.hbs</strong>.</p>
+
+<p>10) Pada panel preview, contact form hanya akan ditampilkan sebagai sebuah Link <a href='http://foxyform.com/' >foxyForm</a>. Jangan kuatir, ini normal. </p>
+
+<p>11) Update post dan tampilkan post atau page yang baru saja anda buat. Ini contoh tampilan jadi dari post yang berisi contact form:</p>
+
+<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/Membuat_Contact_Form.jpg'  alt="" /></p>]]></description><link>http://www.alwinsambul.info/2014/03/26/membuat-contact-form/</link><guid isPermaLink="false">386e8b96-8000-428d-8bd2-874daa8ac540</guid><category><![CDATA[contact form]]></category><category><![CDATA[foxyform]]></category><category><![CDATA[javascript]]></category><dc:creator><![CDATA[Alwin Sambul]]></dc:creator><pubDate>Tue, 25 Mar 2014 16:25:30 GMT</pubDate></item><item><title><![CDATA[Belajar menggunakan &quot;I used to&quot;]]></title><description><![CDATA[<p><iframe width="560" height="315" src='http://www.youtube.com/embed/7pY09qS7E_U'  frameborder="0" allowfullscreen></iframe></p>
 
 <p>Seperti biasa, video Sacha Stevenson selalu menarik dan bikin ketawa. Kali ini, dia mengajarkan cara menggunakan frase "I used to" dalam bahasa Inggris. Silahkan ditonton dulu dan dijamin, anda tidak akan pernah lupa cara menggunakan: "I used to"... :)</p>]]></description><link>http://www.alwinsambul.info/2014/03/25/belajar-menggunakan-i-used-to/</link><guid isPermaLink="false">3a664a39-198b-4248-bff2-2cdd38ea0f15</guid><category><![CDATA[english]]></category><category><![CDATA[sacha stevenson]]></category><category><![CDATA[video]]></category><dc:creator><![CDATA[Alwin Sambul]]></dc:creator><pubDate>Tue, 25 Mar 2014 11:28:44 GMT</pubDate></item><item><title><![CDATA[Kembali ke Github]]></title><description><![CDATA[<p><img src='http://www.alwinsambul.info/content/images/2014/Mar/a_garden_snail_look_around_isolated_on_white_1031138E22C28DF8.jpg'  alt="" /></p>
 
