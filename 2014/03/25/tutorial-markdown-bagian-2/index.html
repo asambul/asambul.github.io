@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Roda Anti Gravitasi</title>
+    <title>Tutorial Markdown (Bagian 2)</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Roda Anti Gravitasi">
+    <meta name="twitter:title" content="Tutorial Markdown (Bagian 2)">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Roda Anti Gravitasi">
+    <meta property="og:title" content="Tutorial Markdown (Bagian 2)">
     <meta property="og:description" content="">
 
     <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -32,10 +32,10 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="AlwinSambul.info" href="../../../../rss/index.html">
-<link rel="canonical" href="http://www.alwinsambul.info/2014/03/19/roda-anti-gravitasi/" />
+<link rel="canonical" href="http://www.alwinsambul.info/2014/03/25/tutorial-markdown-bagian-2/" />
 
 </head>
-<body class="post-template tag-sains no-js">
+<body class="post-template no-js">
 
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
@@ -127,26 +127,73 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="19 Mar 2014" class="post-meta__date date">19 Mar 2014</time> &#8226; <span class="post-meta__tags tags">on sains</span>
+        <time datetime="25 Mar 2014" class="post-meta__date date">25 Mar 2014</time> &#8226; <span class="post-meta__tags tags"></span>
         <!--<span class="post-meta__author author"><img src="//www.gravatar.com/avatar/a5fd2a968864888e138d6bbe766fb6a5?d=404" alt="profile image for Alwin Sambul" class="avatar post-meta__avatar" /> by Alwin Sambul</span>-->
       </div>
-      <h1 class="post-title">Roda Anti Gravitasi</h1>
+      <h1 class="post-title">Tutorial Markdown (Bagian 2)</h1>
     </header>
 
-    <section class="post tag-sains">
-      <p><iframe width="560" height="315" src="http://www.youtube.com/embed/GeyDf4ooPdo" frameborder="0" allowfullscreen></iframe></p>
+    <section class="post">
+      <p><img src="http://kirkstrobeck.github.io/whatismarkdown.com/img/markdown.png" alt="" /></p>
 
-<p>Video di atas diambil dari channel Youtube <a href="https://www.youtube.com/user/1veritasium">Veritasium</a>. Dalam video ini, host-nya mencoba mereplikasi sebuah eksperimen klasik tentang anti-gravitasi, yang pertama kali dipublikasikan oleh <a href="http://en.wikipedia.org/wiki/Eric_Laithwaite">Prof. Eric Laithwaite</a> pada tahun 1974. Simak video aslinya disini: <a href='http://youtu.be/8fRr3e9sVrk'>http://youtu.be/8fRr3e9sVrk</a>. Eksperimen ini melibatkan sebuah beban seberat 19kg yang terdiri atas sebuah roda yang dapat berputar di ujung sebuah tongkat.  </p>
+<h2 id="pendahuluan">Pendahuluan</h2>
 
-<p>Sebagaimana ditunjukkan dalam video di atas, tanpa perlakuan apapun, beban tersebut cukup berat dan sulit untuk diangkat. Selanjutnya, roda pada beban diputar beberapa ribu RPM (Rotation per minute) dengan menggunakan sebuah bor listrik. Apa yang terjadi? Kali ini beban terasa ringan, bahkan bisa diangkat dan diayunkan di atas kepala sang host dengan mudahnya. </p>
+<p><a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> adalah modul editor di Ghost yang tugasnya menerjemahkan teks yang kita masukkan menjadi kode HTML. Bagian 1 tulisan ini dapat anda akses di: <a href='http://www.alwinsambul.info/2014/03/18/tutorial-markdown/'>http://www.alwinsambul.info/2014/03/18/tutorial-markdown/</a></p>
 
-<p>Simak penjelasan saintifik mengenai roda anti gravitasi ini pada video berikut:</p>
+<p>Dalam bagian ke-2 ini, kita akan membahas beberapa fungsi tambahan untuk menformat paragraf. </p>
 
-<p><iframe width="560" height="315" src="http://www.youtube.com/embed/tLMpdBjA2SU" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="list">List</h2>
 
-<hr />
+<p>Anda dapat membuat List (daftar) dengan mudah menggunakan Markdown. Untuk unordered list (daftar tak-berurut), anda dapat menggunakan simbol <code>*</code> di awal setiap kalimat item daftar tersebut. Contoh:</p>
 
-<p>Videos via <a href="http://www.youtube.com">Youtube</a></p>
+<p>Dengan mengetikkan seperti ini:</p>
+
+<pre><code> * ini contoh item 1
+ * ini contoh item 2
+</code></pre>
+
+<p>ini hasilnya:</p>
+
+<ul>
+<li>ini contoh item 1</li>
+<li>ini contoh item 2</li>
+</ul>
+
+<p>Untuk membuat ordered-list (daftar berurut) anda dapat langsung menggunakan angka (1,2,3,...). Untuk saat ini, anda hanya dapat menggunakan angka saja dan bukan alfabet. Contoh:</p>
+
+<p>Dengan mengetikkan seperti ini:</p>
+
+<pre><code> 1. ini contoh item 1
+ 2. ini contoh item 2
+</code></pre>
+
+<p>ini hasilnya:</p>
+
+<ol>
+<li>ini contoh item 1  </li>
+<li>ini contoh item 2</li>
+</ol>
+
+<h2 id="heading">Heading</h2>
+
+<p>Untuk membuat judul tulisan atau bagian-bagian tulisan, anda dapat menggunakan Heading. Markdown menyediakan 6 level heading, mulai dari H1 (terbesar) hingga H6 (terkecil). Simbol <code>#</code> pada awal dan akhir teks digunakan untuk menandai Heading. Contoh:</p>
+
+<p>Dengan mengetikkan seperti ini:</p>
+
+<pre><code># ini contoh H1 #
+## ini contoh H2 ##
+### ini contoh H2 ###
+</code></pre>
+
+<p>ini hasilnya:</p>
+
+<h1 id="inicontohh1">ini contoh H1</h1>
+
+<h2 id="inicontohh2">ini contoh H2</h2>
+
+<h3 id="inicontohh2">ini contoh H2</h3>
+
+<p>Perlu diperhatikan bahwa tampilan masing-masing Header bisa bervariasi tergantung theme Ghost yang digunakan. </p>
     </section>
 
   </article>
@@ -156,15 +203,15 @@
                 <section class="share">
                     Share this post on: 
                     
-                    <a href="http://twitter.com/share?text=Roda%20Anti%20Gravitasi&url=http://www.alwinsambul.info/2014/03/19/roda-anti-gravitasi/" title="Share at Twitter">
+                    <a href="http://twitter.com/share?text=Tutorial%20Markdown%20(Bagian%202)&url=http://www.alwinsambul.info/2014/03/25/tutorial-markdown-bagian-2/" title="Share at Twitter">
 				      <i class='icon icon-social-twitter'></i>				      
 				    </a>
 
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.alwinsambul.info/2014/03/19/roda-anti-gravitasi/" title="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.alwinsambul.info/2014/03/25/tutorial-markdown-bagian-2/" title="Share on Facebook">
 				      <i class='icon icon-social-facebook'></i>				      
 				    </a>
 
-                    <a href="https://plus.google.com/share?url=http://www.alwinsambul.info/2014/03/19/roda-anti-gravitasi/" title="Share on Google plus">
+                    <a href="https://plus.google.com/share?url=http://www.alwinsambul.info/2014/03/25/tutorial-markdown-bagian-2/" title="Share on Google plus">
 				      <i class='icon icon-social-google-plus'></i>				      
 				    </a>
 
